@@ -91,12 +91,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun sentenciaIf() {
-        val myNumber = 11
+        val myNumber = 60
 
-        if (myNumber <= 10) {
-            println("$myNumber es menor o igual que que 10")
-        } else {
-            println("$myNumber es mayor que 10")
+        if ((myNumber <= 10 && myNumber > 5) || myNumber == 53) {
+            println("$myNumber es menor o igual que que 10 y mayor que 5 o es igual a 53")
+        } else if (myNumber == 60){
+            println("$myNumber es igual a 60")
+        }
+        else {
+            println("$myNumber es mayor que 10 o menor a 5 y no es igual a 53")
         }
 
     }
