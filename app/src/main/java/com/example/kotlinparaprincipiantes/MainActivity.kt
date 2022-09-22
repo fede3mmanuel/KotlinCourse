@@ -9,7 +9,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         //variablesYConstantes()
 
-        tiposDeDatos()
+        //tiposDeDatos()
+
+        sentenciaIf()
     }
     /*
     Aqui vamos ha hablar de constantes y variables
@@ -85,6 +87,17 @@ class MainActivity : AppCompatActivity() {
         println(myBool ==  myBool2)
         println(myBool && myBool2)
 
+
+    }
+
+    private fun sentenciaIf() {
+        val myNumber = 11
+
+        if (myNumber <= 10) {
+            println("$myNumber es menor o igual que que 10")
+        } else {
+            println("$myNumber es mayor que 10")
+        }
 
     }
 }
