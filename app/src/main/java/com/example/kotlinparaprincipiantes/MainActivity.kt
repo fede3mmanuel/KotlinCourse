@@ -11,7 +11,10 @@ class MainActivity : AppCompatActivity() {
 
         //tiposDeDatos()
 
-        sentenciaIf()
+        //sentenciaIf()
+
+        //leccionn 4
+        sentenciaWhen()
     }
     /*
     Aqui vamos ha hablar de constantes y variables
@@ -102,5 +105,42 @@ class MainActivity : AppCompatActivity() {
             println("$myNumber es mayor que 10 o menor a 5 y no es igual a 53")
         }
 
+    }
+
+    fun sentenciaWhen() {
+        val country = "Mexico"
+
+        when (country) {
+            "España", "Mexico", "Peru", "Colombia", "Argentina" -> {
+                println("Español")
+            }
+            "EEUU"-> {
+                println("Ingles")
+            }
+            "Francia"-> {
+                println("Frances")
+            } else -> {
+                println("No conocemos el idioma")
+        }
+        }
+
+        // When con Int
+        val age = 10
+
+        when (age) {
+            0, 1, 2 -> {
+                println("Eres un bebe")
+            } in 3..10 -> {
+                println("Eres un niño")
+            } in 11..17 -> {
+                println("Eres un adolescente")
+            } in 18..69 -> {
+                println("Eres un adulto")
+            } in 70..99 -> {
+                println("Eres anciano")
+            } else -> {
+                println("Edad no valida")
+        }
+        }
     }
 }
