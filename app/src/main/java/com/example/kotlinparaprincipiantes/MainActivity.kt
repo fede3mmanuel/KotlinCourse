@@ -14,7 +14,10 @@ class MainActivity : AppCompatActivity() {
         //sentenciaIf()
 
         //leccionn 4
-        sentenciaWhen()
+        //sentenciaWhen()
+
+        //Lección 5
+        arrays()
     }
     /*
     Aqui vamos ha hablar de constantes y variables
@@ -142,5 +145,56 @@ class MainActivity : AppCompatActivity() {
                 println("Edad no valida")
         }
         }
+    }
+    fun arrays() {
+
+        val name = "Braian"
+        val suname = "Moure"
+        val company = "MoureDev"
+        val age = "32"
+
+        // Creacion de array
+
+        val myArray = arrayListOf<String>()
+
+        //Añadir datos
+
+        myArray.add(name)
+        myArray.add(suname)
+        myArray.add(company)
+        myArray.add(age)
+        myArray.add(age)
+
+        println(myArray)
+
+        //Añadir un conjunto de datos
+        myArray.addAll(listOf("Hola", "Bienvenidos", "al", "tutorial"))
+        println(myArray)
+
+        //Acceso a datos
+
+        val myCompany = myArray[0]
+        println(myCompany)
+
+        //Modificacion de datos
+        myArray[5] = "Suscribete"
+        println(myArray)
+
+        // Eliminar datos
+
+        myArray.removeAt(4)
+        println(myArray)
+
+        myArray.forEach {
+            println(it)
+        }
+
+        //otras operaciones
+        myArray.count()
+
+        println(myArray.count())
+        myArray.clear()
+
+        println(myArray)
     }
 }
