@@ -17,7 +17,10 @@ class MainActivity : AppCompatActivity() {
         //sentenciaWhen()
 
         //Lección 5
-        arrays()
+        //arrays()
+
+        //Leccion 6
+        maps()
     }
     /*
     Aqui vamos ha hablar de constantes y variables
@@ -196,5 +199,36 @@ class MainActivity : AppCompatActivity() {
         myArray.clear()
 
         println(myArray)
+    }
+
+    fun maps() {
+        var myMap: Map<String, Int> = mapOf();
+        println(myMap);
+
+        myMap = mutableMapOf("Brais" to 1, "Pedro" to 2, "Sara" to 5)
+        println(myMap)
+
+        //añadir un solo valor
+        myMap["Ana"] = 7
+        println(myMap)
+        myMap.put("Maria", 8)
+        println(myMap)
+
+        myMap.put("Brais", 3)
+        println(myMap)
+
+        myMap["Brais"] = 4
+        println(myMap)
+
+        myMap.put("Marcos", 3)
+        println(myMap)
+
+        //Acceso a dato
+        println(myMap["Brais"])
+
+        //Eliminar un dato
+
+        myMap.remove("Brais" )
+        println(myMap)
     }
 }
