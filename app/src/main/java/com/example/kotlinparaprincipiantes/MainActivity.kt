@@ -319,9 +319,14 @@ class MainActivity : AppCompatActivity() {
         //}
 
         val a = "Kotlin"
-        val b: String? = "null"
+        val b: String? = null
         println(b?.length)
         println(a?.length) // Unnecessary safe call
         b?.let { println(it) }
+        if (b != null) {
+            println(b)
+        } else {
+            println("The value is null")
+        }
     }
 }
