@@ -20,7 +20,10 @@ class MainActivity : AppCompatActivity() {
         //arrays()
 
         //Leccion 6
-        maps()
+        //maps()
+
+        //Leccion 7
+        loops()
     }
     /*
     Aqui vamos ha hablar de constantes y variables
@@ -230,5 +233,49 @@ class MainActivity : AppCompatActivity() {
 
         myMap.remove("Brais" )
         println(myMap)
+    }
+
+    private fun loops() {
+        // bucles
+        val myArray = listOf("Hola", "Bienvenido al tutorial", "suscribete")
+        val mymap = mutableMapOf("Brasis" to 1, "Pedro" to 2, "Sara" to 5)
+
+        //for
+
+        for (myString in myArray) {
+            println(myString)
+        }
+
+        for (myElement in mymap) {
+            println("${myElement.key}-${myElement.value}")
+        }
+
+        for(x in 0..10) {
+            println(x)
+        }
+
+        for(x in 0 until 10) {
+            println(x)
+        }
+
+        for(x in 0..10 step 2) {
+            println(x)
+        }
+
+        for(x in 10 downTo 0 step  3) {
+            println(x)
+        }
+
+        val myNumericArray = (0..20)
+
+        for (mynum in myNumericArray) {
+            println(mynum)
+        }
+
+        var x = 0
+        while ( x < 10){
+            println(x)
+            x += 2
+        }
     }
 }
