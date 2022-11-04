@@ -23,7 +23,10 @@ class MainActivity : AppCompatActivity() {
         //maps()
 
         //Leccion 7
-        loops()
+        //loops()
+
+        //Leccion 8
+        nulSaffety()
     }
     /*
     Aqui vamos ha hablar de constantes y variables
@@ -277,5 +280,48 @@ class MainActivity : AppCompatActivity() {
             println(x)
             x += 2
         }
+    }
+
+    fun nulSaffety() {
+        //var myString = "Mourodev"
+        //myString = null
+        //println(myString)
+
+        //Null safety variable
+        //var mySafetyString:String? = "Mourodev null safety"
+        //mySafetyString = null
+        //println(mySafetyString)
+
+        //mySafetyString = "Suscribete"
+        //println(mySafetyString)
+        //println(mySafetyString!!)
+
+        /*if (mySafetyString != null) {
+            //println(mySafetyString!!)
+            //println(mySafetyString!!)
+        } else {
+            println("null number")
+        }*/
+
+        //Safe call
+        //println(mySafetyString?.length)
+
+        //mySafetyString?.let {
+            // not null do something
+            //println(it:);
+            //println("not null");
+        //}
+
+        //mySafetyString?.let {
+         //   println(it)
+        //} ?:run {
+        //    println(mySafetyString)
+        //}
+
+        val a = "Kotlin"
+        val b: String? = "null"
+        println(b?.length)
+        println(a?.length) // Unnecessary safe call
+        b?.let { println(it) }
     }
 }
