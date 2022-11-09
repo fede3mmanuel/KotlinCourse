@@ -26,7 +26,10 @@ class MainActivity : AppCompatActivity() {
         //loops()
 
         //Leccion 8
-        nulSaffety()
+        //nulSaffety()
+
+        //Leccion 9
+        funciones()
     }
     /*
     Aqui vamos ha hablar de constantes y variables
@@ -328,5 +331,45 @@ class MainActivity : AppCompatActivity() {
         } else {
             println("The value is null")
         }
+    }
+
+
+    fun funciones() {
+        sayHello()
+        sayHello()
+        sayHello()
+
+        sayMyName("Brais")
+        sayMyName("Pedro")
+        sayMyName("Sara")
+
+        sayMyNameAndAge("Brais", 32)
+
+        val sumResult = sumTwoNumbers(10, 5)
+        println(sumResult)
+
+        println(sumTwoNumbers(15, 9))
+
+        println(sumTwoNumbers(10, sumTwoNumbers(5, 5)))
+    }
+
+    //Funcion simple
+    fun sayHello(){
+        println("Hola!")
+    }
+
+    //Funciones con parametros de entrada
+    fun sayMyName(name: String){
+        println("Hola My nimbre es $name")
+    }
+
+    fun sayMyNameAndAge(name: String, age: Int){
+        println("Hola My nimbre es $name y mi edad es $age")
+    }
+
+    //Funciones con valor de retorno
+    fun sumTwoNumbers(firstNumber:Int, secondNumber:Int) : Int {
+        val sum = firstNumber + secondNumber;
+        return sum
     }
 }
