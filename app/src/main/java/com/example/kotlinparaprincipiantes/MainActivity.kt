@@ -29,7 +29,10 @@ class MainActivity : AppCompatActivity() {
         //nulSaffety()
 
         //Leccion 9
-        funciones()
+        //funciones()
+
+        //Leccion 10
+        classes()
     }
     /*
     Aqui vamos ha hablar de constantes y variables
@@ -371,5 +374,19 @@ class MainActivity : AppCompatActivity() {
     fun sumTwoNumbers(firstNumber:Int, secondNumber:Int) : Int {
         val sum = firstNumber + secondNumber;
         return sum
+    }
+
+    fun classes() {
+        val brais = Programmer(name = "Brais", age = 32, arrayOf(Programmer.Languaje.KOTLIN, Programmer.Languaje.SWIFT))
+        println(brais.name)
+
+        brais.age = 40
+
+        brais.code()
+
+        val sara = Programmer(name = "Sara", age = 35, arrayOf(Programmer.Languaje.JAVA), arrayOf(brais))
+        sara.code()
+
+        println("${sara.friends?.first()?.name} es amigo de ${sara.name}")
     }
 }
